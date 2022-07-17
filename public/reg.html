@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Student Registration </title>
+</head>
+<body style="background-image: url('building.jpg');">
+    <div style="border: 1px solid black; width: 595px; margin-left: 30%; margin-top: 5%;  background-color: white;">
+        <div>
+            <span style="font-size:larger; color : red; margin-left: 10%;"> <i> Student Registration </i> </span> <br /> <br />
+            <span style="font-size: larger;"> Please note that all fields that have an asterisk (*) are required to process your registration. </span> <br />
+        </div>
+        <div>
+            <form>
+                <table border="0" style="border-collapse:collapse;">
+                    <tr style="background-color:slategrey; color:white;">
+                        <td colspan="2"> Personal Details </td>
+                        <td colspan="2"> Address </td>
+                    </tr>
+                    <tr>
+                        <td> Birth Date : </td>
+                        <td>
+                            <input type="date" name="birthdate" max="2020-09-18" value="1997-01-18" />
+                        </td>
+                        <td> Address : </td>
+                        <td> <input type="text" name="addr1" placeholder="Karve Nagar" required /> * </td>
+                    </tr>
+                    <tr>
+                        <td> First Name : </td>
+                        <td> <input type="text" name="fname" placeholder="Shripad" required /> * </td>
+                        <td> Landmark : </td>
+                        <td> <input type="text" name="addr2" placeholder="Black Ganpati Temple" /> </td>
+                    </tr>
+                    <tr>
+                        <td> Last Name : </td>
+                        <td> <input type="text" name="lname" placeholder="Kshirsagar" required /> * </td>
+                        <td> Town : </td>
+                        <td> <input type="text" name="town" placeholder="Pune" required /> * </td>
+                    </tr>
+                    <tr>
+                        <td> Email : </td>
+                        <td> <input type="email" name="email" placeholder="shripad000@gmail.com" required /> * </td>
+                        <td> Country/State :</td>
+                        <td> <input type="text" name="state" placeholder="Maharashtra" required /> * </td>
+                    </tr>
+                    <tr>
+                        <td> Telephone : </td>
+                        <td> <input type="number" name="telephone" required /> * </td>
+                        <td> Country: </td>
+                        <td>
+                            <select name="country">
+                                <option value="IND"> India </option>
+                                <option value="USA"> United States </option>
+                                <option value="JP"> Japan </option>
+                                <option value="IQ"> Iraq </option>
+                                <option value="UK"> United Kingdom </option>
+                                <option value="MX"> Mexico </option>
+                                <option value="NL"> Netherlands </option>
+                            </select> *
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> Course : </td>
+                        <td>
+                            <input type="radio" name="course" value="dac" checked /> PG-DAC
+                            <input type="radio" name="course" value="dbda" /> PG-DBDA <br />
+                            <input type="radio" name="course" value="dma" /> PG-DMC
+                            <input type="radio" name="course" value="dai" /> PG-DAI
+                            </select>
+                        </td>
+                        <td> Postcode : </td>
+                        <td> <input type="number" name="postcode" placeholder="411052" required /> * </td>
+                    </tr>
+                    <tr style="background-color:slategrey; color:white;">
+                        <td colspan="4"> Educational Details </td>
+                    </tr>
+                    <tr>
+                        <td> Qualification : </td>
+                        <td> <input type="text" name="qualification1" placeholder="M.CS." required /> * </td>
+                        <td> CGPA : </td>
+                        <td> <input type="number" name="marks" placeholder="9.1" required /> * </td>
+                    </tr>
+                    <tr>
+                        <td> College : </td>
+                        <td> <input type="text" name="college" placeholder="PVG College" required /> * </td>
+                        <td> University : </td>
+                        <td> <input type="text" name="university" placeholder="Pune University" required /> * </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"> <input type="submit" value="SUBMIT" style="float:right"> </td>
+                        <td colspan="2"> <input type="reset" value="RESET" style="float:left"> </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
